@@ -2,13 +2,13 @@
 
 const Alexa = require('alexa-sdk');
 const fetch = require('node-fetch');
-const apiUrl = 'http://54.194.56.149:4000/light/lamp/toggle';
+const {apiUrl, appId} = require('./config');
 
-const APP_ID = 'amzn1.ask.skill.c13732ea-714a-471e-89cf-aade219d5fb7';
 const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye!';
 const SKILL_NAME = 'Dolores';
+
 
 const handlers = {
     'LaunchRequest': function () {
@@ -48,7 +48,7 @@ const handlers = {
 
 exports.handler = (event, context, callback) => {
     const alexa = Alexa.handler(event, context, callback);
-    alexa.appId = APP_ID;
+    alexa.appId = appId;
     alexa.registerHandlers(handlers);
     alexa.execute();
 };
