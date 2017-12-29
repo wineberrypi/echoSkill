@@ -1,5 +1,5 @@
 {
-  "name": "wineberrypi.dolores",
+  "name": "wineberrypi.lambda",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhaskarmelkani/wineberrypi.dolores.git"
+    "url": "git+https://github.com/bhaskarmelkani/wineberrypi.lambda.git"
   },
   "author": "bhaskarmelkani <melkani.bhaskar@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bhaskarmelkani/wineberrypi.dolores/issues"
+    "url": "https://github.com/bhaskarmelkani/wineberrypi.lambda/issues"
   },
-  "homepage": "https://github.com/bhaskarmelkani/wineberrypi.dolores#readme",
+  "homepage": "https://github.com/bhaskarmelkani/wineberrypi.lambda#readme",
   "dependencies": {
     "alexa-sdk": "^1.0.24",
     "node-fetch": "^1.7.3"
