@@ -12,9 +12,9 @@ const SKILL_NAME = 'Dolores';
 
 const handlers = {
     'LaunchRequest': function () {
-        this.emit('GetNewFactIntent');
+        this.emit('LightIntent');
     },
-    'GetNewFactIntent': function (){
+    'LightIntent': function (){
         const speechOutput = 'Light toggled';
 
         fetch(apiUrl)
