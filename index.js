@@ -28,6 +28,10 @@ const handlers = {
                 this.emit(':responseReady');
             });
     },
+    'LedIntent': function (..x){
+      const speechOutput = 'Done my boy!';
+      console.log(x);
+    },
     'AMAZON.HelpIntent': function () {
         const speechOutput = HELP_MESSAGE;
         const reprompt = HELP_REPROMPT;
